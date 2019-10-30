@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="proyectoModelStoreContainer" CdmEntityContainer="proyectoEntities">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="proyectoModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_cantidad_cuotas">
+      <EntityTypeMapping TypeName="proyectoModel.tb_cantidad_cuotas">
+        <MappingFragment StoreEntitySet="tb_cantidad_cuotas">
+          <ScalarProperty Name="id_cantidad_cuota" ColumnName="id_cantidad_cuota" />
+          <ScalarProperty Name="Cantidad_Cuotas" ColumnName="Cantidad_Cuotas" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_credenciales">
+      <EntityTypeMapping TypeName="proyectoModel.tb_credenciales">
+        <MappingFragment StoreEntitySet="tb_credenciales">
+          <ScalarProperty Name="id_credencial" ColumnName="id_credencial" />
+          <ScalarProperty Name="correo" ColumnName="correo" />
+          <ScalarProperty Name="contrasena" ColumnName="contrasena" />
+          <ScalarProperty Name="id_rol" ColumnName="id_rol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_cuotas">
+      <EntityTypeMapping TypeName="proyectoModel.tb_cuotas">
+        <MappingFragment StoreEntitySet="tb_cuotas">
+          <ScalarProperty Name="id_cuota" ColumnName="id_cuota" />
+          <ScalarProperty Name="fecha_limite_pago" ColumnName="fecha_limite_pago" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="id_prestamo" ColumnName="id_prestamo" />
+          <ScalarProperty Name="cuota_num" ColumnName="cuota_num" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_estados_maritales">
+      <EntityTypeMapping TypeName="proyectoModel.tb_estados_maritales">
+        <MappingFragment StoreEntitySet="tb_estados_maritales">
+          <ScalarProperty Name="id_estado_marital" ColumnName="id_estado_marital" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_generos">
+      <EntityTypeMapping TypeName="proyectoModel.tb_generos">
+        <MappingFragment StoreEntitySet="tb_generos">
+          <ScalarProperty Name="id_genero" ColumnName="id_genero" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_intereses">
+      <EntityTypeMapping TypeName="proyectoModel.tb_intereses">
+        <MappingFragment StoreEntitySet="tb_intereses">
+          <ScalarProperty Name="id_interes" ColumnName="id_interes" />
+          <ScalarProperty Name="porcentaje_interes" ColumnName="porcentaje_interes" />
+          <ScalarProperty Name="id_tipo_cliente" ColumnName="id_tipo_cliente" />
+          <ScalarProperty Name="id_cantidad_cuota" ColumnName="id_cantidad_cuota" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_pagos">
+      <EntityTypeMapping TypeName="proyectoModel.tb_pagos">
+        <MappingFragment StoreEntitySet="tb_pagos">
+          <ScalarProperty Name="id_pago" ColumnName="id_pago" />
+          <ScalarProperty Name="Fecha_pag" ColumnName="Fecha_pag" />
+          <ScalarProperty Name="id_cuota" ColumnName="id_cuota" />
+          <ScalarProperty Name="tarjeta_credito" ColumnName="tarjeta_credito" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_prestamos">
+      <EntityTypeMapping TypeName="proyectoModel.tb_prestamos">
+        <MappingFragment StoreEntitySet="tb_prestamos">
+          <ScalarProperty Name="id_prestamo" ColumnName="id_prestamo" />
+          <ScalarProperty Name="monto_solicitado" ColumnName="monto_solicitado" />
+          <ScalarProperty Name="fecha_inicio" ColumnName="fecha_inicio" />
+          <ScalarProperty Name="fecha_final" ColumnName="fecha_final" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="id_cantidad_cuota" ColumnName="id_cantidad_cuota" />
+          <ScalarProperty Name="monto_real" ColumnName="monto_real" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="ssma_rowid" ColumnName="ssma$rowid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_roles">
+      <EntityTypeMapping TypeName="proyectoModel.tb_roles">
+        <MappingFragment StoreEntitySet="tb_roles">
+          <ScalarProperty Name="id_rol" ColumnName="id_rol" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_tipo_clientes">
+      <EntityTypeMapping TypeName="proyectoModel.tb_tipo_clientes">
+        <MappingFragment StoreEntitySet="tb_tipo_clientes">
+          <ScalarProperty Name="id_tipo_cliente" ColumnName="id_tipo_cliente" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="mora" ColumnName="mora" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_usuarios">
+      <EntityTypeMapping TypeName="proyectoModel.tb_usuarios">
+        <MappingFragment StoreEntitySet="tb_usuarios">
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="edad" ColumnName="edad" />
+          <ScalarProperty Name="dpi" ColumnName="dpi" />
+          <ScalarProperty Name="id_estado_marital" ColumnName="id_estado_marital" />
+          <ScalarProperty Name="id_tipo_cliente" ColumnName="id_tipo_cliente" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="fecha_actualizacion" ColumnName="fecha_actualizacion" />
+          <ScalarProperty Name="id_genero" ColumnName="id_genero" />
+          <ScalarProperty Name="id_credencial" ColumnName="id_credencial" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_bitacora_prestamos">
+      <EntityTypeMapping TypeName="proyectoModel.tb_bitacora_prestamos">
+        <MappingFragment StoreEntitySet="tb_bitacora_prestamos">
+          <ScalarProperty Name="id_prestamo" ColumnName="id_prestamo" />
+          <ScalarProperty Name="monto_solicitado" ColumnName="monto_solicitado" />
+          <ScalarProperty Name="fecha_inicio" ColumnName="fecha_inicio" />
+          <ScalarProperty Name="fecha_final" ColumnName="fecha_final" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="id_cantidad_cuota" ColumnName="id_cantidad_cuota" />
+          <ScalarProperty Name="monto_real" ColumnName="monto_real" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

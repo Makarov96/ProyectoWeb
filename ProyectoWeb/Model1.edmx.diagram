@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="450e0c06f7584d91a7122d129e933355" Name="Diagram1">
+        <EntityTypeShape EntityType="proyectoModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="proyectoModel.tb_cantidad_cuotas" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="proyectoModel.tb_credenciales" Width="1.5" PointX="3.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="proyectoModel.tb_cuotas" Width="1.5" PointX="10.5" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="proyectoModel.tb_estados_maritales" Width="1.5" PointX="3.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="proyectoModel.tb_generos" Width="1.5" PointX="3.75" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="proyectoModel.tb_intereses" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="proyectoModel.tb_pagos" Width="1.5" PointX="12.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="proyectoModel.tb_prestamos" Width="1.5" PointX="8.25" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="proyectoModel.tb_roles" Width="1.5" PointX="1.5" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="proyectoModel.tb_tipo_clientes" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="proyectoModel.tb_usuarios" Width="1.5" PointX="6" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="proyectoModel.tb_bitacora_prestamos" Width="1.5" PointX="7.75" PointY="7.75" IsExpanded="true" />
+        <AssociationConnector Association="proyectoModel.tb_intereses_id_cantidad_cuota_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="proyectoModel.tb_prestamos_id_cantidad_cuota_fk_prestamos" ManuallyRouted="false" />
+        <AssociationConnector Association="proyectoModel.tb_credenciales_tb_credenciales_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="proyectoModel.tb_usuarios_tb_usuarios_ibfk_3" ManuallyRouted="false" />
+        <AssociationConnector Association="proyectoModel.tb_cuotas_tb_cuotas_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="proyectoModel.tb_pagos_fk_cuotas_pagos" ManuallyRouted="false" />
+        <AssociationConnector Association="proyectoModel.tb_usuarios_tb_usuarios_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="proyectoModel.tb_usuarios_FKdq0pbaqp8m67xndgytercihyj" ManuallyRouted="false" />
+        <AssociationConnector Association="proyectoModel.tb_intereses_id_tipo_cliente_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="proyectoModel.tb_prestamos_tb_prestamos_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="proyectoModel.tb_prestamos_tb_prestamos_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="proyectoModel.tb_usuarios_tb_usuarios_ibfk_2" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
